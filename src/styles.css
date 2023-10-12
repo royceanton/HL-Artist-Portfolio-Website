@@ -95,21 +95,38 @@ a:hover {
 /* Hero Section */
 .hero {
   margin: 3.88rem 2.62rem 0rem 2.08rem;
-  text-align: center;
 }
 
-.hero h1 {
+/* .hero h1 {
   text-align: left;
   color: var(--primary-color);
   font-size: 2.8125rem;
   font-weight: 300;
+} */
+
+.section-title {
+  text-align: left;
+  color: var(--primary-color);
+  font-size: 2.8125rem;
+  font-weight: 300;
+  position: relative;
 }
 
-.line-mobile {
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -1.19rem; /* Adjust as necessary */
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+/* .line-mobile {
   height: 2px;
   background-color: var(--primary-color);
   margin: 1.19rem 0rem 0rem 0rem;
-}
+} */
 
 .image-grid {
   display: flex;
@@ -124,14 +141,43 @@ a:hover {
 }
 
 /* Portfolio Section */
-.portfolio h2{
+.portfolio h2 {
   display: none;
 }
 
 .portfolio p {
   margin: 2.25rem 2.44rem 0rem 2.06rem;
   text-align: left;
+}
 
+/* Meine Arbeiten Section */
+.meine-arbeit {
+  margin: 13.88rem 2.62rem 0rem 2.08rem;
+  padding-right: 20px;
+}
+
+.work-description p {
+  display: none;
+}
+
+.artwork-gallery {
+  display: flex;
+  overflow-x: scroll;
+  gap: 5px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) var(--secondary-color);
+}
+
+.artwork-gallery::-webkit-scrollbar {
+  height: 5px;
+}
+
+.artwork-gallery::-webkit-scrollbar-track {
+  background: var(--secondary-color);
+}
+
+.artwork-gallery::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
 }
 
 /* Responsive Styles */
