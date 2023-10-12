@@ -1,50 +1,113 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Heidi Leciejewski - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <div class="logo">
-            <img src="assets/logo/logo-desktop.png" alt="Heide's logo">
-        </div>
-    
-        <button class="hamburger-menu">
-            <img src="assets/hamburger-menu.png" alt="hamburger menu icon">
+      <div class="logo">
+        <img src="assets/logo/logo-desktop.png" alt="Heide's logo" />
+      </div>
+
+      <button class="hamburger-menu">
+        <img src="assets/mobile/hamburger-menu.png" alt="hamburger menu icon" />
+      </button>
+
+      <nav class="desktop-nav">
+        <a href="#home">Home</a>
+        <a href="#meine-arbeit">Meine Arbeiten</a>
+        <a href="#about-me">Über Mich</a>
+        <a href="#events">Events</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+
+      <div class="menu-dropdown">
+        <button class="close-menu">
+          <img src="assets/mobile/close-button.png" alt="close menu icon" />
         </button>
-    
-        <nav class="desktop-nav">
-            <a href="#home">Home</a>
-            <a href="#meine-arbeit">Meine Arbeiten</a>
-            <a href="#about-me">Über Mich</a>
-            <a href="#events">Events</a>
-            <a href="#kontakt">Kontakt</a>
-        </nav>
-    
-        <div class="menu-dropdown">
-            <button class="close-menu">
-                <img src="assets/mobile/hamburger-menu.png" alt="close menu icon">
-            </button>
-            <div class="menu-content">
-                <a href="#home">Home</a>
-                <a href="#meine-arbeit">Meine Arbeiten</a>
-                <a href="#about-me">Über Mich</a>
-                <a href="#events">Events</a>
-                <a href="#kontakt">Kontakt</a>
-            </div>
+        <div class="menu-content">
+          <a href="#home">Home</a>
+          <a href="#meine-arbeit">Meine Arbeiten</a>
+          <a href="#about-me">Über Mich</a>
+          <a href="#events">Events</a>
+          <a href="#kontakt">Kontakt</a>
         </div>
+      </div>
     </header>
 
-    <script src="scripts.js"></script>
-</body>
+    <main>
+      <section class="hero">
+        <h1>Heidi Leciejewski</h1>
+        <div class="image-grid">
+          <div>
+            <img src="assets/gallery/pic-1.png" alt="Artwork 1" />
+          </div>
+          <div>
+            <img src="assets/gallery/pic-2.png" alt="Artwork 2" />
+          </div>
+        </div>
+      </section>
 
+      <section class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <p>
+          Die Natur und die Kunst in ihrer Verbindung mit den einfachen Dingen
+          sind Ursprung und Zentrum meiner künstlerischen Interessen. Als Basis
+          allen Lebens wird die Natur zur Grundlage unseres Denkens und Fühlens
+          und damit auch zum Ausgangspunkt meiner Arbeit in und mit der Kunst.
+        </p>
+      </section>
+
+      <!-- My Work Section (Meine Arbeiten) -->
+      <section id="meine-arbeit" class="section work">
+        <h2 class="section-title">Meine Arbeiten</h2>
+
+        <!-- Description -->
+        <div class="work-description">
+          <p>
+            Description or introduction about the artworks or the work process.
+          </p>
+        </div>
+
+        <!-- Artwork Gallery -->
+        <div class="artwork-gallery">
+          <!-- First Artwork Display -->
+          <div class="artwork-display">
+            <img src="path-to-first-artwork.png" alt="First Artwork" />
+            <h3>Artwork Title 1</h3>
+            <p>Description for the first artwork.</p>
+          </div>
+
+          <!-- Second Artwork Display -->
+          <div class="artwork-display">
+            <img src="path-to-second-artwork.png" alt="Second Artwork" />
+            <h3>Artwork Title 2</h3>
+            <p>Description for the second artwork.</p>
+          </div>
+        </div>
+
+        <!-- Image Overlay -->
+        <div class="overlay">
+          <button class="prev">❮</button>
+          <img src="path-to-enlarged-image.png" alt="Enlarged Artwork" />
+          <h3>Enlarged Artwork Title</h3>
+          <p>Description for the enlarged artwork.</p>
+          <button class="next">❯</button>
+          <button class="close-overlay">✖</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="scripts.js"></script>
+  </body>
 </html>

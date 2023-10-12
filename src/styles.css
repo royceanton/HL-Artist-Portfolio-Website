@@ -1,113 +1,132 @@
 /* Global Styles */
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #010000;
-    --hover-color: #333;
-  }
-  
-  body {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--primary-color);
-  }
-  
-  a:hover {
-    color: var(--hover-color);
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.31rem 2.13rem;
-    background-color: var(--secondary-color);
-  }
-  
-  .logo img {
-    height: 51px;
-    width: 57.11px;
-  }
-  
-  .hamburger-menu,
-  .close-menu {
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-  
+  --primary-color: #ffffff;
+  --secondary-color: #010000;
+  --hover-color: #333;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.31rem 2.13rem;
+  background-color: var(--secondary-color);
+}
+
+.logo img {
+  height: 51px;
+  width: 57.11px;
+}
+
+.hamburger-menu,
+.close-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.desktop-nav {
+  display: none; /* Will be shown on larger screens with media query */
+  gap: 20px; /* Space between navigation links */
+}
+
+.menu-dropdown {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(1, 0, 0, 0.95);
+  z-index: 1000;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items horizontally */
+  gap: 20px; /* Space between items */
+}
+
+.menu-content a {
+  padding: 10px 15px;
+  color: var(--primary-color);
+  font-size: 2.8125rem;
+  text-align: center; /* Center the text of each item */
+  width: 100%; /* Make each item take the full width of the container */
+}
+
+.menu-content a:hover {
+  background-color: var(--hover-color);
+}
+
+.close-menu img {
+  position: absolute;
+  top: 1.98rem;
+  right: 2.17rem;
+  font-size: 2.5rem;
+}
+
+.menu-dropdown.open {
+  display: flex;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
   .desktop-nav {
-    display: none;  /* Will be shown on larger screens with media query */
-    gap: 20px;      /* Space between navigation links */
+    display: flex;
   }
-  
-  .menu-dropdown {
+
+  .hamburger-menu {
     display: none;
-    position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
-    background-color: rgba(1, 0, 0, 0.95);
-    z-index: 1000;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-  
-  .menu-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;   /* Center the items horizontally */
-    gap: 20px;             /* Space between items */
+
+  /* Add other tablet-specific styles here */
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
   }
-  
-  .menu-content a {
-    padding: 10px 15px;
-    color: var(--primary-color);
-    font-size: 2.8125rem;
-    text-align: center;    /* Center the text of each item */
-    width: 100%;           /* Make each item take the full width of the container */
+
+  .image-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .menu-content a:hover {
-    background-color: var(--hover-color);
-  }
-  
-  .close-menu img {
-    position: absolute;
-    top: 1.98rem;
-    right: 2.17rem;
-    font-size: 2.5rem;
-  }
-  
-  .menu-dropdown.open {
-    display: flex;
-  }
-  
-  
-  /* Responsive Styles */
-  @media (min-width: 768px) {
-    .desktop-nav {
-        display: flex;
-    }
-  
-    .hamburger-menu {
-        display: none;
-    }
-  
-    /* Add other tablet-specific styles here */
-  }
-  
-  @media (min-width: 1024px) {
-    .container {
-        max-width: 1200px;
-    }
-  
-    /* Add other desktop-specific styles here */
-  }
-  
+
+  /* Add other desktop-specific styles here */
+}
