@@ -3,36 +3,36 @@
    ============================== */
 
 :root {
-    --primary-color: #ffffff;
-    --secondary-color: #010000;
-    --hover-color: #333;
-    --default-margin: 3rem; /* Example default margin */
+  --primary-color: #ffffff;
+  --secondary-color: #010000;
+  --hover-color: #333;
+  --default-margin: 3rem; /* Example default margin */
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 a:hover {
-    color: var(--hover-color);
+  color: var(--hover-color);
 }
 
 /* ==============================
@@ -230,12 +230,25 @@ a:hover {
 }
 
 /* ==============================
-   HEADER STYLES
+   ÜBER MICH - ABOUT ME STYLES
    ============================== */
-.about-me {
-  margin: 8.88rem 2.62rem 0rem 2.08rem;
-  padding-right: 20px;
+
+#about-me {
+  padding: 0rem 0 10rem 0;
 }
+
+.about-me-content {
+  margin: 8.88rem 2.62rem 0rem 2.08rem;
+  padding: 4rem 0 0rem 0;
+}
+
+.about-me-text {
+  margin: 2.25rem 2.44rem 0rem 0rem;
+  text-align: left;
+}
+
+.about-me-text p{
+  padding: 2rem 0rem 0rem 0rem;
 
 /* Responsive Styles */
 @media (min-width: 768px) {
