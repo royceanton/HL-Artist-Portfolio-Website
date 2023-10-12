@@ -5,6 +5,10 @@
   --hover-color: #333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -140,7 +144,7 @@ a:hover {
 
 /* Meine Arbeiten Section */
 .meine-arbeit {
-  margin: 3.88rem 2.62rem 0rem 2.08rem;
+  margin: 8.88rem 2.62rem 0rem 2.08rem;
   padding-right: 20px;
 }
 
@@ -152,6 +156,7 @@ a:hover {
   display: flex;
   overflow-x: scroll;
   gap: 5px;
+  margin: 3.5rem 0rem 0rem 0rem;
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) var(--secondary-color);
 }
@@ -190,6 +195,11 @@ a:hover {
     display: none;
 }
 
+/* Über mich Section */
+.about-me-section {
+  margin: 8.88rem 2.62rem 0rem 2.08rem;
+  padding-right: 20px;
+}
 
 /* Responsive Styles */
 @media (min-width: 768px) {

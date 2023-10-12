@@ -45,3 +45,22 @@ document.querySelector('.overlay .prev').addEventListener('click', function(even
 document.querySelector('.overlay .next').addEventListener('click', function(event) {
   event.stopPropagation();
 });
+
+
+// Get all dropdown links
+const dropdownLinks = document.querySelectorAll('.menu-dropdown a');
+
+// Add event listener to each link
+dropdownLinks.forEach(link => {
+  link.addEventListener('click', function(event) {
+    // Close the dropdown
+    const dropdown = document.querySelector('.menu-dropdown');
+    dropdown.classList.remove('open');
+
+    // After a small delay, adjust scroll position for header height
+    setTimeout(() => {
+      const headerHeight = document.querySelector('.header').offsetHeight;
+      window.scrollBy(0, -headerHeight);  // Adjust the scroll position up by header height
+    }, 50);  // 50ms delay, adjust if needed
+  });
+});
