@@ -44,8 +44,8 @@ a:hover {
 }
 
 .desktop-nav {
-  display: none; /* Will be shown on larger screens with media query */
-  gap: 20px; /* Space between navigation links */
+  display: none; 
+  gap: 20px; 
 }
 
 .menu-dropdown {
@@ -65,16 +65,16 @@ a:hover {
 .menu-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the items horizontally */
-  gap: 20px; /* Space between items */
+  align-items: center; 
+  gap: 20px; 
 }
 
 .menu-content a {
   padding: 10px 15px;
   color: var(--primary-color);
   font-size: 2.8125rem;
-  text-align: center; /* Center the text of each item */
-  width: 100%; /* Make each item take the full width of the container */
+  text-align: center; 
+  width: 100%;
 }
 
 .menu-content a:hover {
@@ -98,13 +98,6 @@ a:hover {
   margin: 3.88rem 2.62rem 0rem 2.08rem;
 }
 
-/* .hero h1 {
-  text-align: left;
-  color: var(--primary-color);
-  font-size: 2.8125rem;
-  font-weight: 300;
-} */
-
 .section-title {
   text-align: left;
   color: var(--primary-color);
@@ -116,18 +109,12 @@ a:hover {
 .section-title::after {
   content: "";
   position: absolute;
-  bottom: -1.19rem; /* Adjust as necessary */
+  bottom: -1.19rem; 
   left: 0;
   height: 2px;
   width: 100%;
   background-color: var(--primary-color);
 }
-
-/* .line-mobile {
-  height: 2px;
-  background-color: var(--primary-color);
-  margin: 1.19rem 0rem 0rem 0rem;
-} */
 
 .image-grid {
   display: flex;
@@ -188,8 +175,8 @@ a:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black background */
-  z-index: 2000; /* high z-index to ensure it appears on top of everything else */
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: 2000; 
   align-items: center;
   justify-content: center;
 }
