@@ -18,6 +18,12 @@ body {
   color: var(--primary-color);
 }
 
+h1,
+h2,
+section {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -31,7 +37,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.31rem 2.13rem;
+  padding: 1.31rem 2.13rem 0.1rem 2.13rem;
   background-color: var(--secondary-color);
 }
 
@@ -48,8 +54,8 @@ a:hover {
 }
 
 .desktop-nav {
-  display: none; 
-  gap: 20px; 
+  display: none;
+  gap: 20px;
 }
 
 .menu-dropdown {
@@ -69,15 +75,15 @@ a:hover {
 .menu-content {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  gap: 20px; 
+  align-items: center;
+  gap: 20px;
 }
 
 .menu-content a {
   padding: 10px 15px;
   color: var(--primary-color);
   font-size: 2.8125rem;
-  text-align: center; 
+  text-align: center;
   width: 100%;
 }
 
@@ -98,8 +104,12 @@ a:hover {
 }
 
 /* Hero Section */
-.hero {
+/* .hero {
   margin: 3.88rem 2.62rem 0rem 2.08rem;
+} */
+.hero {
+  margin: 0 2.62rem;
+  padding: 4rem 0 0rem 0;
 }
 
 .section-title {
@@ -113,7 +123,7 @@ a:hover {
 .section-title::after {
   content: "";
   position: absolute;
-  bottom: -1.19rem; 
+  bottom: -1.19rem;
   left: 0;
   height: 2px;
   width: 100%;
@@ -133,6 +143,11 @@ a:hover {
 }
 
 /* Portfolio Section */
+.portfolio {
+  padding-bottom: 8rem;
+  margin-left: 0.8rem;
+}
+
 .portfolio h2 {
   display: none;
 }
@@ -143,9 +158,13 @@ a:hover {
 }
 
 /* Meine Arbeiten Section */
-.meine-arbeit {
+/* .meine-arbeit {
   margin: 8.88rem 2.62rem 0rem 2.08rem;
   padding-right: 20px;
+} */
+.meine-arbeit {
+  margin: 0rem 2.62rem;
+  padding: 3rem 0 8rem 0;
 }
 
 .work-description p {
@@ -174,15 +193,15 @@ a:hover {
 }
 
 .overlay {
-  pointer-events: none; 
+  pointer-events: none;
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.8); 
-  z-index: 2000; 
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
   align-items: center;
   justify-content: center;
 }
@@ -195,7 +214,14 @@ a:hover {
 
 .overlay .prev,
 .overlay .next {
-    display: none;
+  display: none;
+}
+
+.close-menu-overlay img {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
 }
 
 /* Über mich Section */
@@ -242,7 +268,7 @@ a:hover {
 
   .overlay .prev,
   .overlay .next {
-      display: block;
+    display: block;
   }
 
   /* Add other desktop-specific styles here */

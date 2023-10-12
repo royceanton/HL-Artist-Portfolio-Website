@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heidi Leciejewski - Home</title>
+    <title>Test Scroll</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,6 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
     <header class="header">
       <div class="logo">
@@ -46,80 +45,87 @@
     </header>
 
     <main>
-      <section class="hero">
-        <h1 class="section-title">Heidi Leciejewski</h1>
+      <div style="height: auto; background-color: black" id="home">
+        <section class="hero">
+          <h1 class="section-title">Heidi Leciejewski</h1>
 
-        <div class="line-mobile"></div>
+          <div class="line-mobile"></div>
 
-        <div class="image-grid">
-          <div>
-            <img src="assets/gallery/pic-1.png" alt="Artwork 1" />
+          <div class="image-grid">
+            <div>
+              <img src="assets/gallery/pic-1.png" alt="Artwork 1" />
+            </div>
+            <div>
+              <img src="assets/gallery/pic-2.png" alt="Artwork 2" />
+            </div>
           </div>
-          <div>
-            <img src="assets/gallery/pic-2.png" alt="Artwork 2" />
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="portfolio">
-        <h2 class="section-title">PORTFOLIO</h2>
-        <p>
-          Die Natur und die Kunst in ihrer Verbindung mit den einfachen Dingen
-          sind Ursprung und Zentrum meiner künstlerischen Interessen. Als Basis
-          allen Lebens wird die Natur zur Grundlage unseres Denkens und Fühlens
-          und damit auch zum Ausgangspunkt meiner Arbeit in und mit der Kunst.
-        </p>
-      </section>
-
-      <!-- My Work Section (Meine Arbeiten) -->
-      <section class="meine-arbeit">
-        <h1 class="section-title">Meine Arbeiten</h1>
-
-        <div class="work-description">
+        <section class="portfolio">
+          <h2 class="section-title">PORTFOLIO</h2>
           <p>
-            In der Praxis meines Gestaltens äußert sich diese Verbindung von
-            Natur und Kunst in der häufigen Verwendung von Dingen, die mir in
-            der Natur begegnen und Grundlage für meine Arbeiten werden. Mit
-            diesen Themen beschäftige ich mich schon sehr lange. Ideen und
-            Hoffnung wachsen aus der Natur und auch die Kreativität die Welt zu
-            erhalten und zu gestalten. Dies ist Programm, Aufgabe, Sehnsucht und
-            Leidenschaft.
+            Die Natur und die Kunst in ihrer Verbindung mit den einfachen Dingen
+            sind Ursprung und Zentrum meiner künstlerischen Interessen. Als
+            Basis allen Lebens wird die Natur zur Grundlage unseres Denkens und
+            Fühlens und damit auch zum Ausgangspunkt meiner Arbeit in und mit
+            der Kunst.
           </p>
-        </div>
+        </section>
+      </div>
 
-        <div class="artwork-gallery">
-          <!-- First Artwork Display -->
-          <div class="artwork-display">
-            <img src="assets/gallery/pic-1.png" alt="First Artwork" />
-            <h3>Artwork Title 1</h3>
-            <p>Description for the first artwork.</p>
+      <div style="height: auto; background-color: black" id="meine-arbeit">
+        <!-- My Work Section (Meine Arbeiten) -->
+        <section class="meine-arbeit">
+          <h1 class="section-title">Meine Arbeiten</h1>
+
+          <div class="work-description">
+            <p>
+              In der Praxis meines Gestaltens äußert sich diese Verbindung von
+              Natur und Kunst in der häufigen Verwendung von Dingen, die mir in
+              der Natur begegnen und Grundlage für meine Arbeiten werden. Mit
+              diesen Themen beschäftige ich mich schon sehr lange. Ideen und
+              Hoffnung wachsen aus der Natur und auch die Kreativität die Welt
+              zu erhalten und zu gestalten. Dies ist Programm, Aufgabe,
+              Sehnsucht und Leidenschaft.
+            </p>
           </div>
 
-          <!-- Second Artwork Display -->
-          <div class="artwork-display">
-            <img src="assets/gallery/pic-2.png" alt="Second Artwork" />
-            <h3>Artwork Title 2</h3>
-            <p>Description for the second artwork.</p>
+          <div class="artwork-gallery">
+            <!-- First Artwork Display -->
+            <div class="artwork-display">
+              <img src="assets/gallery/pic-1.png" alt="First Artwork" />
+              <h3>Artwork Title 1</h3>
+              <p>Description for the first artwork.</p>
+            </div>
+
+            <!-- Second Artwork Display -->
+            <div class="artwork-display">
+              <img src="assets/gallery/pic-2.png" alt="Second Artwork" />
+              <h3>Artwork Title 2</h3>
+              <p>Description for the second artwork.</p>
+            </div>
           </div>
-        </div>
 
-        <!-- Image Overlay -->
-        <div class="overlay">
-          <button class="prev">❮</button>
-          <img src="path-to-enlarged-image.png" alt="Enlarged Artwork" />
-          <button class="next">❯</button>
-          <button class="close-menu-overlay">
-            <img src="assets/mobile/close-button.png" alt="close menu icon" />
-          </button>
-        </div>
-      </section>
+          <!-- Image Overlay -->
+          <div class="overlay">
+            <button class="prev">❮</button>
+            <img src="path-to-enlarged-image.png" alt="Enlarged Artwork" />
+            <button class="next">❯</button>
+            <button class="close-menu-overlay">
+              <img src="assets/mobile/close-button.png" alt="close menu icon" />
+            </button>
+          </div>
+        </section>
+      </div>
 
-      <!-- About Me (Über mich) -->
-      <section class="about-me">
-        <h1 class="section-title">Über mich</h1>
-      </section>
+      <div style="height: 1000px; background-color: green" id="about-me">
+        Über Mich
+      </div>
+
+      <div style="height: 1000px; background-color: yellow" id="events">
+        Mein Events
+      </div>
     </main>
-
     <script src="scripts.js"></script>
   </body>
 </html>
