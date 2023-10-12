@@ -86,6 +86,7 @@ a:hover {
   top: 1.98rem;
   right: 2.17rem;
   font-size: 2.5rem;
+  padding-right: 10px;
 }
 
 .menu-dropdown.open {
@@ -152,7 +153,7 @@ a:hover {
 
 /* Meine Arbeiten Section */
 .meine-arbeit {
-  margin: 13.88rem 2.62rem 0rem 2.08rem;
+  margin: 3.88rem 2.62rem 0rem 2.08rem;
   padding-right: 20px;
 }
 
@@ -179,6 +180,29 @@ a:hover {
 .artwork-gallery::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
 }
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black background */
+  z-index: 2000; /* high z-index to ensure it appears on top of everything else */
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+.overlay .prev,
+.overlay .next {
+    display: none;
+}
+
 
 /* Responsive Styles */
 @media (min-width: 768px) {
@@ -214,6 +238,11 @@ a:hover {
 
   .image-grid div {
     margin: 0;
+  }
+
+  .overlay .prev,
+  .overlay .next {
+      display: block;
   }
 
   /* Add other desktop-specific styles here */
