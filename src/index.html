@@ -170,63 +170,56 @@
         </section>
       </div>
 
-      <div style="height: auto; background-color: blue" id="kontakt">
-        <!-- Contact Me Section -->
-        <section class="contact-me">
-          <h1 class="section-title">Kontakt</h1>
-
-          <!-- Mobile View: Contact Cards -->
-          <div class="contact-cards-mobile">
-            <!-- Repeating this structure for every contact card. Adjust as necessary. -->
-            <div class="contact-card">
-              <img
-                src="path-to-icon.png"
-                alt="Icon Description"
-                class="contact-icon"
-              />
-              <h3 class="contact-title">Contact Title</h3>
-              <p class="contact-description">
-                Contact description goes here. This is a placeholder for the
-                contact information.
-              </p>
-            </div>
-            <!-- Repeat above structure for more contact cards -->
+      <div id="kontakt" style="background-color: #f7f7f7">
+        <section class="contact-section">
+          <!-- Left Column (Image & Title) for Desktop -->
+          <div class="left-column">
+            <img src="path-to-left-image.png" alt="Left Image Description" />
+            <h1 class="section-title">Kontakt</h1>
           </div>
 
-          <!-- Desktop View: Three Column Structure -->
-          <div class="contact-columns-desktop">
-            <!-- Left Column: Profile Image and Description -->
-            <div class="left-column">
+          <!-- Middle Column for Desktop -->
+          <div class="middle-column">
+            <h3>Title for Middle Column</h3>
+            <p>Description for the middle column goes here.</p>
+          </div>
+
+          <!-- Right Column for Both Mobile and Desktop -->
+          <div class="right-column">
+            <div class="divider"></div>
+            <!-- Divider line for Desktop -->
+
+            <!-- Contact Card 1 -->
+            <div class="contact-card">
               <img
-                src="path-to-profile-image.png"
-                alt="Profile Image"
-                class="profile-img"
+                src="path-to-icon1.png"
+                alt="Phone Icon"
+                class="contact-icon"
               />
-              <p class="profile-description">
-                Description text about the person goes here.
-              </p>
+              <h3>Telefon</h3>
+              <p>+49 123 456 789</p>
             </div>
 
-            <!-- Center Column: Address and Email Information -->
-            <div class="center-column">
-              <h3 class="address-title">Adresse</h3>
-              <p class="address-details">Address details go here.</p>
-              <h3 class="email-title">E-Mail</h3>
-              <p class="email-details">Email details go here.</p>
+            <!-- Contact Card 2 -->
+            <div class="contact-card">
+              <img
+                src="path-to-icon2.png"
+                alt="Email Icon"
+                class="contact-icon"
+              />
+              <h3>Email</h3>
+              <p>example@email.com</p>
             </div>
 
-            <!-- Right Column: Phone Information and Contact Form -->
-            <div class="right-column">
-              <h3 class="phone-title">Telefon</h3>
-              <p class="phone-details">Phone details go here.</p>
-              <h3 class="form-title">Schreib Mir</h3>
-              <!-- Contact Form Structure -->
-              <form action="submit_form_url" method="post">
-                <input type="text" name="name" placeholder="Name" />
-                <input type="email" name="email" placeholder="E-Mail" />
-                <textarea name="message" placeholder="Nachricht"></textarea>
-                <button type="submit" class="submit-btn">Senden</button>
-              </form>
+            <!-- Contact Card 3 -->
+            <div class="contact-card">
+              <img
+                src="path-to-icon3.png"
+                alt="Location Icon"
+                class="contact-icon"
+              />
+              <h3>Atelier</h3>
+              <p>Schriesheimer Fußweg 5</p>
             </div>
           </div>
         </section>
