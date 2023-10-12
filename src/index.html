@@ -170,8 +170,66 @@
         </section>
       </div>
 
-      <div style="height: 1000px; background-color: red" id="events">
-        Contact Me
+      <div style="height: auto; background-color: blue" id="kontakt">
+        <!-- Contact Me Section -->
+        <section class="contact-me">
+          <h1 class="section-title">Kontakt</h1>
+
+          <!-- Mobile View: Contact Cards -->
+          <div class="contact-cards-mobile">
+            <!-- Repeating this structure for every contact card. Adjust as necessary. -->
+            <div class="contact-card">
+              <img
+                src="path-to-icon.png"
+                alt="Icon Description"
+                class="contact-icon"
+              />
+              <h3 class="contact-title">Contact Title</h3>
+              <p class="contact-description">
+                Contact description goes here. This is a placeholder for the
+                contact information.
+              </p>
+            </div>
+            <!-- Repeat above structure for more contact cards -->
+          </div>
+
+          <!-- Desktop View: Three Column Structure -->
+          <div class="contact-columns-desktop">
+            <!-- Left Column: Profile Image and Description -->
+            <div class="left-column">
+              <img
+                src="path-to-profile-image.png"
+                alt="Profile Image"
+                class="profile-img"
+              />
+              <p class="profile-description">
+                Description text about the person goes here.
+              </p>
+            </div>
+
+            <!-- Center Column: Address and Email Information -->
+            <div class="center-column">
+              <h3 class="address-title">Adresse</h3>
+              <p class="address-details">Address details go here.</p>
+              <h3 class="email-title">E-Mail</h3>
+              <p class="email-details">Email details go here.</p>
+            </div>
+
+            <!-- Right Column: Phone Information and Contact Form -->
+            <div class="right-column">
+              <h3 class="phone-title">Telefon</h3>
+              <p class="phone-details">Phone details go here.</p>
+              <h3 class="form-title">Schreib Mir</h3>
+              <!-- Contact Form Structure -->
+              <form action="submit_form_url" method="post">
+                <input type="text" name="name" placeholder="Name" />
+                <input type="email" name="email" placeholder="E-Mail" />
+                <textarea name="message" placeholder="Nachricht"></textarea>
+                <button type="submit" class="submit-btn">Senden</button>
+              </form>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <script src="scripts.js"></script>
