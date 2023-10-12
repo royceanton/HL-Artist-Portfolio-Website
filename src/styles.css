@@ -247,8 +247,32 @@ a:hover {
   text-align: left;
 }
 
-.about-me-text p{
+.about-me-text p {
   padding: 2rem 0rem 0rem 0rem;
+}
+
+/* ==============================
+   MEINE EVENTS STYLES
+   ============================== */
+
+.events-content {
+  margin: 8.88rem 2.62rem 0rem 2.08rem;
+  padding: 4rem 0 0rem 0;
+}
+
+.events-grid {
+  margin-top: 2.25rem;
+  display: grid;
+  gap: 2rem; /* Adjust as needed for spacing between cards */
+  padding: 2rem 0;
+  margin-bottom: 17rem;
+}
+
+/* For Mobile: Single column layout */
+.event {
+  border: 1px solid black; /* Add a border for clarity, remove if not needed */
+  padding: 1rem;
+  border-radius: 8px; /* Rounded edges for the card, adjust as needed */
 }
 
 /* Responsive Styles */
@@ -292,5 +316,14 @@ a:hover {
     display: block;
   }
 
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .event-title,
+  .event-location,
+  .event-date {
+    display: inline-block;
+    margin-right: 1rem;
+  }
   /* Add other desktop-specific styles here */
 }
