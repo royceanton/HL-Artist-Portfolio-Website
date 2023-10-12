@@ -1,37 +1,43 @@
-/* Global Styles */
-html {
-  scroll-behavior: smooth;
-}
+/* ==============================
+   GLOBAL STYLES
+   ============================== */
 
 :root {
-  --primary-color: #ffffff;
-  --secondary-color: #010000;
-  --hover-color: #333;
+    --primary-color: #ffffff;
+    --secondary-color: #010000;
+    --hover-color: #333;
+    --default-margin: 3rem; /* Example default margin */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-
-h1,
-h2,
-section {
-  margin: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 a {
-  text-decoration: none;
-  color: var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
 }
 
 a:hover {
-  color: var(--hover-color);
+    color: var(--hover-color);
 }
+
+/* ==============================
+   HEADER STYLES
+   ============================== */
 
 .header {
   display: flex;
@@ -103,10 +109,10 @@ a:hover {
   display: flex;
 }
 
-/* Hero Section */
-/* .hero {
-  margin: 3.88rem 2.62rem 0rem 2.08rem;
-} */
+/* ==============================
+   HOME STYLES
+   ============================== */
+
 .hero {
   margin: 0 2.62rem;
   padding: 4rem 0 0rem 0;
@@ -157,11 +163,10 @@ a:hover {
   text-align: left;
 }
 
-/* Meine Arbeiten Section */
-/* .meine-arbeit {
-  margin: 8.88rem 2.62rem 0rem 2.08rem;
-  padding-right: 20px;
-} */
+/* ==============================
+   MEINE ARBEITEN STYLES
+   ============================== */
+
 .meine-arbeit {
   margin: 0rem 2.62rem;
   padding: 3rem 0 8rem 0;
@@ -224,7 +229,9 @@ a:hover {
   font-size: 2.5rem;
 }
 
-/* Über mich Section */
+/* ==============================
+   HEADER STYLES
+   ============================== */
 .about-me {
   margin: 8.88rem 2.62rem 0rem 2.08rem;
   padding-right: 20px;
