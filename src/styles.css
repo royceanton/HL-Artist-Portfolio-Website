@@ -249,6 +249,7 @@ a:hover {
 
 .about-me-text p{
   padding: 2rem 0rem 0rem 0rem;
+}
 
 /* Responsive Styles */
 @media (min-width: 768px) {
