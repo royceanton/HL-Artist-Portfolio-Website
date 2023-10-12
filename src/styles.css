@@ -123,21 +123,15 @@ a:hover {
   height: auto;
 }
 
-/* Line Section */
-.home-line .line {
-  height: 2px;
-  background: #000; /* Adjust the color as needed */
-  margin: 20px 0;
-}
-
 /* Portfolio Section */
-.portfolio {
-  text-align: center;
-  padding: 20px 0;
+.portfolio h2{
+  display: none;
 }
 
 .portfolio p {
-  text-align: left; /* Left-aligning the description */
+  margin: 2.25rem 2.44rem 0rem 2.06rem;
+  text-align: left;
+
 }
 
 /* Responsive Styles */
