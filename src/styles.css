@@ -264,16 +264,28 @@ a:hover {
   margin-top: 2.25rem;
   display: grid;
   gap: 2rem; /* Adjust as needed for spacing between cards */
-  padding: 2rem 0;
+  padding: 1rem 0;
   margin-bottom: 1rem;
 }
 
 /* For Mobile: Single column layout */
 .event {
   border: 1px solid black; /* Add a border for clarity, remove if not needed */
-  padding: 1rem;
+  padding: 0rem;
   border-radius: 8px; /* Rounded edges for the card, adjust as needed */
+  text-align: left;
 }
+
+.event h3 {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.event p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
 
 /* ==============================
    KONTAKT STYLES
@@ -324,18 +336,25 @@ a:hover {
 /* Text size control */
 .right-column {
   margin-top: 4rem;
-  padding-right: 4rem ;
+  padding-right: 2rem ;
 }
 
 .contact-card h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 300;
 }
 
 .contact-card p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 300;
 }
+
+.contact-icon {
+  width: 2.5rem;  /* Adjusted size */
+  height: 2.5rem; /* Adjusted size */
+  flex-shrink: 0;
+}
+
 
 /* Responsive Styles */
 @media (min-width: 768px) {
