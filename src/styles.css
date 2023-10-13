@@ -398,16 +398,26 @@ a:hover {
 }
 
 /* Responsive Styles */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   .desktop-nav {
-    display: flex;
-  }
-
-  .hamburger-menu {
     display: none;
   }
 
-  /* Add other tablet-specific styles here */
+  .hamburger-menu {
+    display: block;
+  }
+
+  .image-grid {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .image-grid > div:first-child {
+    margin-right: -0.3rem;  /* Adjust based on spacing in UI */
+  }
 }
 
 @media (min-width: 1024px) {
