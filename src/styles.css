@@ -265,7 +265,7 @@ a:hover {
   display: grid;
   gap: 2rem; /* Adjust as needed for spacing between cards */
   padding: 2rem 0;
-  margin-bottom: 17rem;
+  margin-bottom: 1rem;
 }
 
 /* For Mobile: Single column layout */
@@ -273,6 +273,68 @@ a:hover {
   border: 1px solid black; /* Add a border for clarity, remove if not needed */
   padding: 1rem;
   border-radius: 8px; /* Rounded edges for the card, adjust as needed */
+}
+
+/* ==============================
+   KONTAKT STYLES
+   ============================== */
+
+.left-column img {
+  display: none;
+}
+
+.middle-column {
+  display: none;
+}
+
+.contact-section {
+  margin: 15rem 2.62rem 0rem 2.62rem;
+  padding-top: 3rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center; /* This vertically centers the icon with the text */
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.contact-text h3, 
+.contact-text p {
+  margin: 0; /* Remove default margins */
+  line-height: 1.4; /* Adjust for better spacing if needed */
+}
+
+.contact-text p {
+  margin-top: 5px; /* Adds some spacing between the title and the info */
+}
+
+/* Screen height */
+#kontakt {
+  padding: 0rem 0 25rem 0;
+}
+
+/* Text size control */
+.right-column {
+  margin-top: 4rem;
+  padding-right: 4rem ;
+}
+
+.contact-card h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.contact-card p {
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 /* Responsive Styles */
