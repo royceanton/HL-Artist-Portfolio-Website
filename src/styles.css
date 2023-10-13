@@ -234,6 +234,21 @@ a:hover {
   font-size: 2.5rem;
 }
 
+.artwork-display h3{
+  padding-top: 2rem;
+  padding-left: 0.2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.artwork-display p{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 0.2rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /* ==============================
    ÜBER MICH - ABOUT ME STYLES
    ============================== */
