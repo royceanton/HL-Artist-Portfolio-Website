@@ -238,6 +238,12 @@ a:hover {
   display: none;
 }
 
+.close-menu-overlay {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .close-menu-overlay img {
   position: absolute;
   top: 10px;
