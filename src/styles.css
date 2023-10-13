@@ -6,7 +6,17 @@
   --primary-color: #ffffff;
   --secondary-color: #010000;
   --hover-color: #333;
-  --default-margin: 3rem; /* Example default margin */
+
+  /* Defined standardized margins and paddings */
+  --default-margin: 3rem;
+  --small-margin: 1rem;
+  --medium-margin: 2rem;
+  --large-margin: 4rem;
+
+  --default-padding: 3rem;
+  --small-padding: 1rem;
+  --medium-padding: 2rem;
+  --large-padding: 4rem;
 }
 
 * {
@@ -43,7 +53,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.31rem 2.13rem 0.1rem 2.13rem;
+  padding: var(--small-padding) var(--medium-padding) 0.1rem
+    var(--medium-padding);
   background-color: var(--secondary-color);
 }
 
@@ -234,14 +245,14 @@ a:hover {
   font-size: 2.5rem;
 }
 
-.artwork-display h3{
+.artwork-display h3 {
   padding-top: 2rem;
   padding-left: 0.2rem;
   font-size: 1rem;
   font-weight: 300;
 }
 
-.artwork-display p{
+.artwork-display p {
   padding-top: 2rem;
   padding-bottom: 2rem;
   padding-left: 0.2rem;
@@ -311,7 +322,6 @@ a:hover {
   font-weight: 300;
 }
 
-
 /* ==============================
    KONTAKT STYLES
    ============================== */
@@ -343,7 +353,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.contact-text h3, 
+.contact-text h3,
 .contact-text p {
   margin: 0; /* Remove default margins */
   line-height: 1.4; /* Adjust for better spacing if needed */
@@ -362,7 +372,7 @@ a:hover {
 /* Text size control */
 .right-column {
   margin-top: 4rem;
-  padding-right: 2rem ;
+  padding-right: 2rem;
 }
 
 .contact-card h3 {
@@ -376,11 +386,10 @@ a:hover {
 }
 
 .contact-icon {
-  width: 2.5rem;  /* Adjusted size */
+  width: 2.5rem; /* Adjusted size */
   height: 2.5rem; /* Adjusted size */
   flex-shrink: 0;
 }
-
 
 /* Responsive Styles */
 @media (min-width: 768px) {
