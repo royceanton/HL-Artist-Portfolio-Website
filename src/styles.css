@@ -6,7 +6,17 @@
   --primary-color: #ffffff;
   --secondary-color: #010000;
   --hover-color: #333;
-  --default-margin: 3rem; /* Example default margin */
+
+  /* Defined standardized margins and paddings */
+  --default-margin: 3rem;
+  --small-margin: 1rem;
+  --medium-margin: 2rem;
+  --large-margin: 4rem;
+
+  --default-padding: 3rem;
+  --small-padding: 1rem;
+  --medium-padding: 2rem;
+  --large-padding: 4rem;
 }
 
 * {
@@ -43,7 +53,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.31rem 2.13rem 0.1rem 2.13rem;
+  padding: var(--small-padding) var(--medium-padding) 0.1rem
+    var(--medium-padding);
   background-color: var(--secondary-color);
 }
 
@@ -114,8 +125,8 @@ a:hover {
    ============================== */
 
 .hero {
-  margin: 0 2.62rem;
-  padding: 5rem 0 0rem 0;
+  margin: 0 var(--medium-margin);
+  padding: var(--large-padding) 0 0 0;
 }
 
 .section-title {
@@ -159,7 +170,7 @@ a:hover {
 }
 
 .portfolio p {
-  margin: 2.25rem 2.44rem 0rem 2.06rem;
+  margin: 2rem 2rem 0rem 1rem;
   text-align: left;
 }
 
@@ -173,8 +184,8 @@ a:hover {
    ============================== */
 
 .meine-arbeit {
-  margin: 0rem 2.62rem;
-  padding: 3rem 0 8rem 0;
+  margin: 0rem var(--medium-margin);
+  padding: var(--medium-padding) 0 var(--large-padding) 0;
 }
 
 .work-description p {
@@ -185,7 +196,7 @@ a:hover {
   display: flex;
   overflow-x: scroll;
   gap: 5px;
-  margin: 3.5rem 0rem 0rem 0rem;
+  margin: 3rem 0rem 0rem 0rem;
   scrollbar-width: thin;
   scrollbar-color: var(--primary-color) var(--secondary-color);
 }
@@ -234,15 +245,15 @@ a:hover {
   font-size: 2.5rem;
 }
 
-.artwork-display h3{
+.artwork-display h3 {
   padding-top: 2rem;
   padding-left: 0.2rem;
   font-size: 1rem;
   font-weight: 300;
 }
 
-.artwork-display p{
-  padding-top: 2rem;
+.artwork-display p {
+  padding-top: 1rem;
   padding-bottom: 2rem;
   padding-left: 0.2rem;
   font-size: 1rem;
@@ -254,12 +265,12 @@ a:hover {
    ============================== */
 
 #about-me {
-  padding: 0rem 0 10rem 0;
+  padding: 0rem 0 var(--large-padding) 0;
 }
 
 .about-me-content {
-  margin: 8.88rem 2.62rem 0rem 2.08rem;
-  padding: 4rem 0 0rem 0;
+  margin: var(--large-margin) var(--medium-margin) 0 var(--medium-margin);
+  padding: var(--medium-padding) 0 0 0;
 }
 
 .about-me-text {
@@ -281,8 +292,8 @@ a:hover {
    ============================== */
 
 .events-content {
-  margin: 8.88rem 2.62rem 0rem 2.08rem;
-  padding: 4rem 0 4rem 0;
+  margin: var(--large-margin) var(--medium-margin) 0 var(--medium-margin);
+  padding: var(--medium-padding) 0 var(--medium-padding) 0;
 }
 
 .events-grid {
@@ -311,7 +322,6 @@ a:hover {
   font-weight: 300;
 }
 
-
 /* ==============================
    KONTAKT STYLES
    ============================== */
@@ -325,8 +335,8 @@ a:hover {
 }
 
 .contact-section {
-  margin: 15rem 2.62rem 0rem 2.62rem;
-  padding-top: 3rem;
+  margin: var(--large-padding) var(--medium-margin) 0 var(--medium-margin);
+  padding-top: var(--medium-padding);
 }
 
 .contact-card {
@@ -343,7 +353,7 @@ a:hover {
   flex-shrink: 0;
 }
 
-.contact-text h3, 
+.contact-text h3,
 .contact-text p {
   margin: 0; /* Remove default margins */
   line-height: 1.4; /* Adjust for better spacing if needed */
@@ -356,13 +366,13 @@ a:hover {
 /* Screen height */
 #kontakt {
   margin-top: 5rem;
-  padding: 0rem 0 25rem 0;
+  padding: 0rem 0 20rem 0;
 }
 
 /* Text size control */
 .right-column {
   margin-top: 4rem;
-  padding-right: 2rem ;
+  padding-right: 2rem;
 }
 
 .contact-card h3 {
@@ -376,11 +386,10 @@ a:hover {
 }
 
 .contact-icon {
-  width: 2.5rem;  /* Adjusted size */
+  width: 2.5rem; /* Adjusted size */
   height: 2.5rem; /* Adjusted size */
   flex-shrink: 0;
 }
-
 
 /* Responsive Styles */
 @media (min-width: 768px) {
