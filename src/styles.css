@@ -115,7 +115,7 @@ a:hover {
 
 .hero {
   margin: 0 2.62rem;
-  padding: 4rem 0 0rem 0;
+  padding: 5rem 0 0rem 0;
 }
 
 .section-title {
@@ -282,7 +282,7 @@ a:hover {
 
 .events-content {
   margin: 8.88rem 2.62rem 0rem 2.08rem;
-  padding: 4rem 0 0rem 0;
+  padding: 4rem 0 4rem 0;
 }
 
 .events-grid {
@@ -355,6 +355,7 @@ a:hover {
 
 /* Screen height */
 #kontakt {
+  margin-top: 5rem;
   padding: 0rem 0 25rem 0;
 }
 
