@@ -17,6 +17,13 @@
   --small-padding: 1rem;
   --medium-padding: 2rem;
   --large-padding: 4rem;
+
+  --major: 55%;
+  --minor: 45%;
+
+  --pc-text-size-large: 5rem;
+  --pc-text-size-medium: 3rem;
+  --pc-text-size-small: 1.2rem;
 }
 
 * {
@@ -426,6 +433,11 @@ a:hover {
 
 /* Responsive Styles */
 @media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .desktop-nav {
     display: none;
   }
@@ -510,42 +522,106 @@ a:hover {
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+/* ==============================
 
-  /* Hero Section */
-  .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
-  .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
 
-  .image-grid div {
-    margin: 0;
-  }
+            DESKTOP STYLES
 
-  .overlay .prev,
-  .overlay .next {
-    display: block;
-  }
 
-  .events-grid {
-    grid-template-columns: repeat(3, 1fr);
+
+   ============================== */
+   @media screen and (min-width: 1024px) {
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    /* Header styles */
+    .desktop-nav {
+      display: flex;
+      gap: 2rem;
+      margin-left: auto;
+    }
+  
+    .hamburger-menu,
+    .menu-dropdown {
+      display: none;
+    }
+  
+    .header {
+      padding: var(--medium-padding);
+      flex-direction: row;
+      justify-content: start;
+    }
+  
+    .logo {
+      margin-right: auto;
+    }
+  
+    /* Hero section styles */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0rem var(--small-padding) 2rem var(--small-padding);
+    }
+  
+    .section-title.no-line::after {
+      display: none;
+    }
+  
+    .hero .section-title {
+      flex-basis: var(--major);
+      font-size: var(--pc-text-size-large);
+      margin-right: 1rem;
+    }
+  
+    .image-grid {
+      flex-basis: var(--minor); 
+      gap: 1%; /* slight gap between images */
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .image-grid div {
+      flex: 1; /* make each image container take up equal space */
+    }
+  
+    .image-grid img {
+      width: 100%; /* make images fill their container */
+      height: auto;
+    }
+  
+  
+    /* Portfolio section styles */
+    .portfolio {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem var(--small-padding) 2rem var(--small-padding);
+    }
+  
+    .portfolio h2 {
+      flex-basis: var(--major);
+      font-size: var(--pc-text-size-medium);
+      display: block;
+      color: var(--primary-color);
+      margin-right: 1rem;
+    }
+  
+    .portfolio p {
+      flex-basis: var(--minor);
+      font-size: var(--pc-text-size-small);
+      text-align: left;
+    }
+  
+    .line-pc {
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #fff;
+      margin: var(--small-margin) 0;
+    }
   }
-  .event-title,
-  .event-location,
-  .event-date {
-    display: inline-block;
-    margin-right: 1rem;
-  }
-  /* Add other desktop-specific styles here */
-}
+  
