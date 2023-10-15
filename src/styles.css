@@ -618,10 +618,10 @@ a:hover {
   
     .line-pc {
       display: block;
-      width: 100%;
-      height: 1px;
+      width: calc(100% - 4 * var(--small-margin)); 
+      height: 2px;
       background-color: #fff;
-      margin: var(--small-margin) 0;
+      margin: 0 auto; /* center the line */
     }
   }
   
