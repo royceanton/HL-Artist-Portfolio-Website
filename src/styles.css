@@ -454,6 +454,60 @@ a:hover {
   .image-grid > div:first-child {
     margin-right: -0.3rem; /* Adjust based on spacing in UI */
   }
+
+  /* ==============================
+   MEINE EVENTS STYLES - IPAD
+   ============================== */
+
+  .events-content {
+    margin: var(--large-margin) var(--medium-margin) 0 var(--medium-margin);
+    padding: var(--medium-padding) 0 var(--large-padding) 0;
+  }
+
+  .events-grid {
+    margin-top: 2.25rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Three equally sized columns */
+    align-items: center; /* Vertically centers the content of each grid cell */
+    padding: 1rem 0;
+    /* border-bottom: 1px solid white; Bottom border for the table */
+  }
+
+  /* Headers for each column (optional) */
+  .events-grid-header {
+    display: none; /* Hidden by default. We can display it on larger screens if needed */
+  }
+
+  .events-grid-header div {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .event {
+    border: 1px solid black;
+    padding: 0rem;
+    text-align: left;
+    display: contents; /* Makes the .event container act as if it's not there, allowing its children to sit directly in the grid */
+  }
+
+  .event h3,
+  .event p {
+    margin: 0; /* Remove default margins */
+    padding: 0.5rem; /* Add some padding for spacing */
+  }
+
+  .event h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    /* border-bottom: 1px solid white; Add a bottom border to each row */
+  }
+
+  .event p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    /* border-bottom: 1px solid white; Add a bottom border to each row */
+  }
 }
 
 @media (min-width: 1024px) {
