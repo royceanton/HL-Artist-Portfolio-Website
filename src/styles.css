@@ -22,7 +22,7 @@
   --minor: 45%;
 
   --pc-text-size-large: 5rem;
-  --pc-text-size-medium: 3rem;
+  --pc-text-size-medium: 2.5rem;
   --pc-text-size-small: 1.2rem;
 }
 
@@ -531,97 +531,103 @@ a:hover {
 
 
    ============================== */
-   @media screen and (min-width: 1024px) {
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    /* Header styles */
-    .desktop-nav {
-      display: flex;
-      gap: 2rem;
-      margin-left: auto;
-    }
-  
-    .hamburger-menu,
-    .menu-dropdown {
-      display: none;
-    }
-  
-    .header {
-      padding: var(--medium-padding);
-      flex-direction: row;
-      justify-content: start;
-    }
-  
-    .logo {
-      margin-right: auto;
-    }
-  
-    /* Hero section styles */
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0rem var(--small-padding) 2rem var(--small-padding);
-    }
-  
-    .section-title.no-line::after {
-      display: none;
-    }
-  
-    .hero .section-title {
-      flex-basis: var(--major);
-      font-size: var(--pc-text-size-large);
-      margin-right: 1rem;
-    }
-  
-    .image-grid {
-      flex-basis: var(--minor); 
-      gap: 1%; /* slight gap between images */
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .image-grid div {
-      flex: 1; /* make each image container take up equal space */
-    }
-  
-    .image-grid img {
-      width: 100%; /* make images fill their container */
-      height: auto;
-    }
-  
-  
-    /* Portfolio section styles */
-    .portfolio {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 4rem var(--small-padding) 2rem var(--small-padding);
-    }
-  
-    .portfolio h2 {
-      flex-basis: var(--major);
-      font-size: var(--pc-text-size-medium);
-      display: block;
-      color: var(--primary-color);
-      margin-right: 1rem;
-    }
-  
-    .portfolio p {
-      flex-basis: var(--minor);
-      font-size: var(--pc-text-size-small);
-      text-align: left;
-    }
-  
-    .line-pc {
-      display: block;
-      width: calc(100% - 4 * var(--small-margin)); 
-      height: 2px;
-      background-color: #fff;
-      margin: 0 auto; /* center the line */
-    }
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
   }
-  
+
+  /* ==============================
+   HOME STYLES - DESKTOP
+   ============================== */
+  /* Header styles */
+  .desktop-nav {
+    display: flex;
+    gap: 2rem;
+    margin-left: auto;
+  }
+
+  .hamburger-menu,
+  .menu-dropdown {
+    display: none;
+  }
+
+  .header {
+    padding: var(--medium-padding);
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .logo {
+    margin-right: auto;
+  }
+
+  /* Hero section styles */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0rem 0 1rem 0;
+  }
+
+  .section-title.no-line::after {
+    display: none;
+  }
+
+  .hero .section-title {
+    flex-basis: var(--major);
+    font-size: var(--pc-text-size-large);
+  }
+
+  .image-grid {
+    flex-basis: var(--minor);
+    gap: 1%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .image-grid div {
+    flex: 1;
+  }
+
+  .image-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Portfolio section styles */
+  .portfolio {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem var(--small-padding) 2rem var(--small-padding);
+  }
+
+  .portfolio h2 {
+    flex-basis: var(--major);
+    font-size: var(--pc-text-size-medium);
+    display: block;
+    color: var(--primary-color);
+    align-self: flex-start;
+  }
+
+  .portfolio p {
+    flex-basis: var(--minor);
+    font-size: var(--pc-text-size-small);
+    text-align: left;
+    align-self: flex-start;
+  }
+
+  .portfolio h2,
+  .portfolio p {
+    margin: 0;
+  }
+
+  .line-pc {
+    display: block;
+    width: calc(100% - 4 * var(--small-margin));
+    height: 2px;
+    background-color: #fff;
+    margin: 0 auto;
+  }
+}
