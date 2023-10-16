@@ -670,7 +670,7 @@ a:hover {
   }
 
   .left-content {
-    flex-basis: var(--major);
+    max-width: var(--major);
   }
 
   .work-description {
