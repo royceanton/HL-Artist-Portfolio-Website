@@ -653,8 +653,8 @@ a:hover {
    ============================== */
 
   .meine-arbeit {
-    padding: 4rem var(--small-padding); 
-    color: var(--primary-color); 
+    padding: 4rem var(--small-padding);
+    color: var(--primary-color);
   }
 
   .meine-arbeit .section-title {
@@ -666,7 +666,7 @@ a:hover {
   .meine-arbeit-content {
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
   }
 
   .left-content {
