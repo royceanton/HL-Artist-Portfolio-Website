@@ -317,6 +317,19 @@ a:hover {
   font-weight: 300;
 }
 
+.upper-section p {
+  display: none; /* Hide the second paragraph */
+}
+
+.lower-section .about-me-text .additional-content {
+  display: block; /* Show the added content */
+  padding-top: 1rem;
+}
+
+.image-grid {
+  display: none; /* Hide the image grid */
+}
+
 /* ==============================
    MEINE EVENTS STYLES
    ============================== */
@@ -684,4 +697,79 @@ a:hover {
     padding: 1rem 2rem 0rem 0rem;
   }
 
+  /* ==============================
+   ABOUT ME STYLES - DESKTOP
+   ============================== */
+  .about-me-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem var(--small-padding);
+    color: var(--primary-color);
+  }
+
+  .upper-section p {
+    display: block; 
+  }
+
+  .lower-section .about-me-text .additional-content {
+    display: none; 
+  }
+
+  .image-grid {
+    display: flex; 
+  }
+
+  .upper-section h1,
+  .lower-section .about-me-text {
+    flex-basis: var(--major);
+  }
+
+  .upper-section p,
+  .lower-section .image-grid {
+    flex-basis: var(--minor);
+  }
+
+  .about-me-content .section-title::after {
+    display: none;
+  }
+
+  .about-me-content .section-title {
+    max-width: var(--major);
+    font-size: var(--pc-text-size-large);
+    margin-bottom: 2rem;
+    padding-right: 25rem;
+  }
+
+  .about-me-content p {
+    font-size: var(--pc-text-size-small);
+    line-height: 1.2;
+  }
+
+  .upper-section,
+  .lower-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .about-me-content .line-pc {
+    display: block;
+    width: calc(100% - 0 * var(--small-margin));
+    height: 2px;
+    background-color: #fff;
+    margin: 0rem 0rem 1rem 0rem;
+  }
+
+  .about-me-text {
+    margin-top: 0rem;
+    margin-right: 0rem;
+    padding-right: 2rem;
+  }
+  .upper-section {
+    align-items: center;
+  }
+
+  .lower-section {
+    align-items: flex-start;
+  }
 }
