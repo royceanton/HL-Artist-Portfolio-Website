@@ -1,4 +1,47 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Function to determine the distance from the top of the viewport
+  function getDistanceFromTop(element) {
+    const rect = element.getBoundingClientRect();
+    return rect.top;
+  }
+
+  // Function to remove the active class from all links
+  function removeActiveClassFromLinks() {
+    document.querySelectorAll(".desktop-nav a").forEach((link) => {
+      link.classList.remove("active");
+    });
+  }
+
+  // Add a scroll event listener
+  window.addEventListener("scroll", function () {
+    // Sections that correspond to menu items
+    const sections = ["home", "meine-arbeit", "about-me", "events", "kontakt"];
+
+    let closestSection = sections[0];
+    let smallestDistance = Infinity;
+
+    for (let section of sections) {
+      const sectionEl = document.getElementById(section);
+      const distance = Math.abs(getDistanceFromTop(sectionEl));
+
+      if (distance < smallestDistance) {
+        smallestDistance = distance;
+        closestSection = section;
+      }
+    }
+
+    // Remove active class from all links
+    removeActiveClassFromLinks();
+
+    // Find the link that corresponds to the closest section and add the active class
+    const navLink = document.querySelector(
+      `.desktop-nav a[href="#${closestSection}"]`
+    );
+    if (navLink) {
+      navLink.classList.add("active");
+    }
+  });
+
   // Hamburger menu functionality
   document
     .querySelector(".hamburger-menu")

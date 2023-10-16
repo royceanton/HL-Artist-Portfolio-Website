@@ -21,7 +21,7 @@
   --major: 55%;
   --minor: 45%;
 
-  --pc-text-size-large: 5rem;
+  --pc-text-size-large: 6rem;
   --pc-text-size-medium: 2.5rem;
   --pc-text-size-small: 1.2rem;
 }
@@ -556,6 +556,25 @@ a:hover {
     padding: var(--medium-padding);
     flex-direction: row;
     justify-content: start;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* this ensures the navbar stays on top of other elements */
+  }
+
+  main {
+    padding-top: 4rem; /* Adjust based on the height of your navbar */
+  }
+
+  .desktop-nav a.active {
+    color: var(
+      --hover-color
+    ); /* or any other highlight color you prefer or --hover-color*/
+    font-weight: bold; /* optional: to make the active link bold */
   }
 
   .logo {
