@@ -653,8 +653,8 @@ a:hover {
    ============================== */
 
   .meine-arbeit {
-    padding: 4rem var(--small-padding); /* Added padding to match the Figma design */
-    color: var(--primary-color); /* Making text color white as per the Figma design */
+    padding: 4rem var(--small-padding); 
+    color: var(--primary-color); 
   }
 
   .meine-arbeit .section-title {
@@ -663,19 +663,25 @@ a:hover {
     margin-bottom: 2rem;
   }
 
-  .work-description p {
-    display: block;
-    padding: 1rem 0rem 0rem 0rem;
+  .meine-arbeit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
   }
+
+  .left-content {
+    flex-basis: var(--major);
+  }
+
   .work-description {
-    max-width: var(--major);
     margin-bottom: 2rem;
     font-size: var(--pc-text-size-small);
     line-height: 1.5;
   }
 
-  .artwork-gallery {
-    display: flex;
-    flex-wrap: wrap;
+  .work-description p {
+    display: block;
+    padding: 1rem 0rem 0rem 0rem;
   }
+
 }
