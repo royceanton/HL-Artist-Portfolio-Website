@@ -563,18 +563,16 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000; /* this ensures the navbar stays on top of other elements */
+    z-index: 1000;
   }
 
   main {
-    padding-top: 4rem; /* Adjust based on the height of your navbar */
+    padding-top: 4rem;
   }
 
   .desktop-nav a.active {
-    color: var(
-      --hover-color
-    ); /* or any other highlight color you prefer or --hover-color*/
-    font-weight: bold; /* optional: to make the active link bold */
+    color: var(--hover-color);
+    font-weight: bold;
   }
 
   .logo {
@@ -648,5 +646,36 @@ a:hover {
     height: 2px;
     background-color: #fff;
     margin: 0 auto;
+  }
+
+  /* ==============================
+   MEINE ARBEITEN STYLES - DESKTOP
+   ============================== */
+
+  .meine-arbeit {
+    padding: 4rem var(--small-padding); /* Added padding to match the Figma design */
+    color: var(--primary-color); /* Making text color white as per the Figma design */
+  }
+
+  .meine-arbeit .section-title {
+    max-width: var(--major);
+    font-size: var(--pc-text-size-large);
+    margin-bottom: 2rem;
+  }
+
+  .work-description p {
+    display: block;
+    padding: 1rem 0rem 0rem 0rem;
+  }
+  .work-description {
+    max-width: var(--major);
+    margin-bottom: 2rem;
+    font-size: var(--pc-text-size-small);
+    line-height: 1.5;
+  }
+
+  .artwork-gallery {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
