@@ -333,6 +333,9 @@ a:hover {
 /* ==============================
    MEINE EVENTS STYLES
    ============================== */
+.events-image-grid {
+  display: none;
+}
 
 .events-content {
   margin: var(--large-margin) var(--medium-margin) 0 var(--medium-margin);
@@ -708,15 +711,15 @@ a:hover {
   }
 
   .upper-section p {
-    display: block; 
+    display: block;
   }
 
   .lower-section .about-me-text .additional-content {
-    display: none; 
+    display: none;
   }
 
   .image-grid {
-    display: flex; 
+    display: flex;
   }
 
   .upper-section h1,
@@ -771,5 +774,105 @@ a:hover {
 
   .lower-section {
     align-items: flex-start;
+  }
+
+  /* ==============================
+   MEINE EVENTS STYLES - DESKTOP
+   ============================== */
+  .events-content {
+    padding: 4rem var(--small-padding);
+    color: var(--primary-color);
+  }
+
+  .events-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 2rem;
+  }
+
+  .events-content .section-title {
+    font-size: var(--pc-text-size-large);
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    padding-right: 20rem;
+    flex-basis: var(--major);
+  }
+
+  .events-image-grid {
+    flex-basis: var(--minor);
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .events-image-grid img {
+    /* border-radius: 1.5rem; */
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .events-bottom {
+    width: 100%;
+  }
+
+  .events-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .events-image-grid.parallax {
+    /* The image used */
+    background-image: url("assets/gallery/pic-6.png");
+
+    border-radius: 2rem;
+
+    /* Set a specific height */
+    min-height: 300px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  /* Table */
+  .events-bottom {
+    width: 100%;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr; /* 2 parts for title, 3 parts for location, 2 parts for date */
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .event {
+    display: contents;
+  }
+
+  .event-title,
+  .event-location,
+  .event-date {
+    padding: 0.5rem 0;
+    align-items: center;
+  }
+
+  .event-title {
+    font-size: var(--pc-text-size-small);
+    grid-column: 1;
+  }
+
+  .event-location {
+    /* font-size: var(--pc-text-size-large); */
+    grid-column: 2;
+  }
+
+  .event-date {
+    /* font-size: var(--pc-text-size-large); */
+    grid-column: 3;
   }
 }
