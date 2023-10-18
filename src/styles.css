@@ -824,7 +824,7 @@ a:hover {
 
   .events-image-grid.parallax {
     /* The image used */
-    background-image: url("assets/gallery/pic-6.png");
+    /* background-image: url("assets/gallery/pic-6.png"); */
 
     border-radius: 2rem;
 
