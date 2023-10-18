@@ -718,8 +718,26 @@ a:hover {
     display: none;
   }
 
+  .about-me-image.parallax {
+    min-height: 400px; /* Adjust as needed */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0rem; /* Optional */
+    margin: 1rem 0; /* Optional: To give some space between images */
+  }
+
   .image-grid {
     display: flex;
+    flex-direction: row; /* Stack images vertically */
+    gap: 1rem; /* Space between images */
+  }
+
+  .about-me-content .image-grid img {
+    display: flex;
+    height: 100%;
+    object-fit: cover;
   }
 
   .upper-section h1,
@@ -823,9 +841,6 @@ a:hover {
   }
 
   .events-image-grid.parallax {
-    /* The image used */
-    /* background-image: url("assets/gallery/pic-6.png"); */
-
     border-radius: 2rem;
 
     /* Set a specific height */
@@ -862,17 +877,17 @@ a:hover {
   }
 
   .event-title {
-    font-size: var(--pc-text-size-small);
+    font-size: var(--pc-text-size-large);
     grid-column: 1;
   }
 
   .event-location {
-    /* font-size: var(--pc-text-size-large); */
+    font-size: var(--pc-text-size-large);
     grid-column: 2;
   }
 
   .event-date {
-    /* font-size: var(--pc-text-size-large); */
+    font-size: var(--pc-text-size-large);
     grid-column: 3;
   }
 }
