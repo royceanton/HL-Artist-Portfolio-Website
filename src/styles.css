@@ -724,7 +724,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 0rem; /* Optional */
+    border-radius: 0.5rem; /* Optional */
     margin: 1rem 0; /* Optional: To give some space between images */
   }
 
